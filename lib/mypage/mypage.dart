@@ -43,7 +43,7 @@ class _mypagesiteState extends State<mypagesite> with SingleTickerProviderStateM
         child: Column(
           children: [
             _UserInformation(),
-            const SizedBox(height: 10.0),
+            SizedBox(height: 10.0),
             // _JoinMembership(),
             // TextButton(
             //   onPressed: () {
