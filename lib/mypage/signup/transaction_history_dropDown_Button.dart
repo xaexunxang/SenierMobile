@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/*----------------------------------------------------------------------------*/
 const List<String> transactionTypes = ['중고거래', '공동구매'];
 
 class TransactionDropdownButton extends StatefulWidget {
@@ -28,7 +29,6 @@ class _TransactionDropdownButtonState extends State<TransactionDropdownButton> {
     return Padding(
       padding: const EdgeInsets.only(left: 20.0),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           DropdownButton(
               borderRadius: BorderRadius.circular(7.0),
@@ -53,6 +53,7 @@ class _TransactionDropdownButtonState extends State<TransactionDropdownButton> {
   }
 }
 
+/*----------------------------------------------------------------------------*/
 const List<String> checkTransaction = ['거래 중', '거래 완료'];
 
 class TransactionCheckDropdownButton extends StatefulWidget {
@@ -73,7 +74,6 @@ class _TransactionCheckDropdownButtonState extends State<TransactionCheckDropdow
   @override
   void initState() {
     super.initState();
-
     checkDropDownValue = widget.initialValue;
   }
 
@@ -91,7 +91,7 @@ class _TransactionCheckDropdownButtonState extends State<TransactionCheckDropdow
               style: const TextStyle(
                 color: Colors.black,
               ),
-              items: transactionTypes
+              items: checkTransaction
                   .map<DropdownMenuItem<String>>((String value) {
                 return DropdownMenuItem(value: value, child: Text(value));
               }).toList(),

@@ -3,10 +3,8 @@ import 'package:image_picker/image_picker.dart';
 import 'package:mojadel2/mypage/profile/modifyprofile.dart';
 import 'package:mojadel2/mypage/signup/signup.dart';
 import 'package:mojadel2/mypage/signup/tabbar_using_controller.dart';
-import 'package:mojadel2/mypage/signup/tabmenu_tabbar.dart';
 import 'package:mojadel2/mypage/signup/tabs.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'login/loginpage.dart';
 import 'dart:io';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -43,7 +41,7 @@ class _mypagesiteState extends State<mypagesite> with SingleTickerProviderStateM
         child: Column(
           children: [
             _UserInformation(),
-            cosnt SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             // _JoinMembership(),
             // TextButton(
             //   onPressed: () {
@@ -91,7 +89,6 @@ class _mypagesiteState extends State<mypagesite> with SingleTickerProviderStateM
             //   },
             //   child: Text('Tabbar Test'),
             // ),
-            TabMenuTabbar(),
             TabBarUsingController(),
           ],
         ),
