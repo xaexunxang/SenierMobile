@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// TABS에 label값을 주기 위한 TabInfo
 class TabInfo {
   // final IconData icon;
   final String label;
@@ -10,6 +11,7 @@ class TabInfo {
   });
 }
 
+// TABS = 카테고리 배열
 const TABS = [
   TabInfo(label: '거래내역'),
   TabInfo(label: '요모조모'),
